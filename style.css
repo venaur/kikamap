@@ -1,0 +1,15 @@
+#aMap{
+/*    Height of map*/
+    height: 1100px; 
+}
+
+ .leaflet-popup-content{ 
+    width: auto; 
+    outline-width: thick;
+    padding-right: 99px; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
