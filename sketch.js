@@ -1,50 +1,43 @@
+
+
+
 //start point on map
 const mymap = L.map("aMap").setView([-40.895522, -58.47602], 12);
+
 //define tiles
 /* http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png
-     default map: https://tile.openstreetmap.org/{z}/{x}/{y}.png */
+  default map: https://tile.openstreetmap.org/{z}/{x}/{y}.png */
+
 
 const tiles = L.tileLayer(
-  "http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-  {
+  "http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",{
     zoom: 12,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }
-).addTo(mymap);
+    attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(mymap);
+
+
 
 //Load Icons
 //red Icon
 var redIcon = L.icon({
   iconUrl: "icons/redIcon.png",
-  iconSize: [30.9, 53.8],
-});
+  iconSize: [30.9, 53.8]});
 
 //blue Icon
 var blueIcon = L.icon({
   iconUrl: "icons/blueIcon.png",
-  iconSize: [30.9, 53.8],
-});
+  iconSize: [30.9, 53.8]});
 
 //Yellow Icon
 var yellowIcon = L.icon({
   iconUrl: "icons/yellowIcon.png",
-  iconSize: [30.9, 53.8],
-});
+  iconSize: [30.9, 53.8]});
 
+  
 //add all markers
 //red icons
 
-//    var marker = L.marker([46.423611, -86.624417], {
-//    title: "This is a test",
-//}).addTo(map)
-//  .bindPopup('<a href="Web Page Adress Here"><h1> Test Title </h1></a><img src="Link to Image" width=100 height=100 />');
-
-const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon })
-  .addTo(mymap)
-  .bindPopup(
-    '<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <img src = "assets/sabon_master.png" width=400 height=253 /></a>'
-  );
+const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon }).addTo(mymap).bindPopup(
+  '<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
 // add to layer: Training, Yun Moo Kwan, Film
 
 const peruBeach = L.marker([-34.472324, -58.492197], { icon: redIcon }).addTo(
@@ -143,6 +136,106 @@ const notary = L.marker([-34.606004, -58.386153], { icon: yellowIcon }).addTo(
 );
 notary.bindPopup('<h2>Notary</h2> <p> Here has to be added some text for later </p> <img src = "assets/Notary_image.png" width=400 height=280 />').openPopup();
 // add to layer: work, Yun Moo Kwan, Film
+
+
+
+
+
+
+//------------------
+let currentStep = 0;
+const totalSteps = 100;
+const animationInterval = 20;
+
+const medalWorkshopCoords = [-34.568358, -58.594658];
+const triglavCoords = [-34.621898, -58.529336];
+const juventudCastelarCoords = [-34.664928, -58.656449];
+const parroquiaCoords = [-34.650071, -58.433637];
+const costaSalgueroCoords = [-34.569107, -58.403364];
+
+let animationPath1 = [];
+let animationPath2 = [];
+let animationPath3 = [];
+
+let pathwayPolyline1;
+let pathwayPolyline2;
+let pathwayPolyline3;
+
+function setup() {
+  // Your setup code here...
+
+  // Calculate intermediate coordinates for each animation
+  animationPath1 = calculateIntermediateCoords(medalWorkshopCoords, triglavCoords);
+  animationPath2 = calculateIntermediateCoords(triglavCoords, juventudCastelarCoords);
+  animationPath3 = calculateIntermediateCoords(triglavCoords, parroquiaCoords);
+  animationPath4 = calculateIntermediateCoords(triglavCoords, costaSalgueroCoords);
+
+  // Create separate polylines for each animation segment
+  pathwayPolyline1 = L.polyline([], { color: 'purple', weight: 3 }).addTo(mymap);
+  pathwayPolyline2 = L.polyline([], { color: 'green', weight: 3 }).addTo(mymap);
+  pathwayPolyline3 = L.polyline([], { color: 'blue', weight: 3 }).addTo(mymap);
+  pathwayPolyline4 = L.polyline([], { color: 'red', weight: 3 }).addTo(mymap);
+
+  // Start the first animation
+  animatePath1().then(() => {
+    // Once the first animation is complete, start the second animation
+    animatePaths();
+  });
+}
+
+function calculateIntermediateCoords(start, end) {
+  const stepLat = (end[0] - start[0]) / totalSteps;
+  const stepLng = (end[1] - start[1]) / totalSteps;
+  const intermediateCoords = [];
+
+  for (let i = 1; i <= totalSteps; i++) {
+    const lat = start[0] + stepLat * i;
+    const lng = start[1] + stepLng * i;
+    intermediateCoords.push([lat, lng]);
+  }
+
+  return intermediateCoords;
+}
+
+function animatePath1() {
+  return new Promise(resolve => {
+    const interval = setInterval(() => {
+      if (currentStep < totalSteps) {
+        // Add the next point to the polyline
+        pathwayPolyline1.addLatLng(animationPath1[currentStep]);
+
+        // Increment the step counter
+        currentStep++;
+      } else {
+        // Animation completed, clear the interval
+        clearInterval(interval);
+        // Reset the step counter and resolve the Promise
+        currentStep = 0;
+        resolve();
+      }
+    }, animationInterval);
+  });
+}
+
+function animatePaths() {
+  const interval = setInterval(() => {
+    if (currentStep < totalSteps) {
+      // Add the next points to the polylines
+      pathwayPolyline2.addLatLng(animationPath2[currentStep]);
+      pathwayPolyline3.addLatLng(animationPath3[currentStep]);
+      pathwayPolyline4.addLatLng(animationPath4[currentStep]);
+
+      // Increment the step counter
+      currentStep++;
+    } else {
+      // Animation completed, clear the interval
+      clearInterval(interval);
+    }
+  }, animationInterval);
+}
+
+
+//--------------------------
 
 
 // orange Icon
