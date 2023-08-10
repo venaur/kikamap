@@ -13,3 +13,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.c-polyline {
+    z-index: 1000; /* Adjust the value as needed */
+  }
+
+  /* .leaflet-control-layers-overlays > label:first-child {
+    display: none;
+  } */
