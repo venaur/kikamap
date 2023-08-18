@@ -24,7 +24,7 @@ var yellowIcon = L.icon({
 
 
 //intro popup
-var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent("<h1>INTRODUCTION!!!!</h1> <br> <h2> Hello there</h2>").openOn(mymap);
+var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent("<h1>INTRODUCTION!!!!</h1> <br> <h2> Welcome to this map exploring Taekwondo in Buenos Aires. The markers are the locations where I did my fieldwork. Click on them and you will see a new pop-up. Some of them are linked to short films and others just have a description and image. On the top right you can choose different settings. For example. you can just choose a colour or yu can look at suggested routes...<br>Feel free to roam a about and enjoy the journey into my PhD. <br> Best wishes, <br> Kika <br> <br> *This map has been made by Vendela Håkonsen and Henrike Neuhaus <br> **find the hidden one, it's a long story</h2>").openOn(mymap);
 
 //--------------------Red icons-----------------------------------
 const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon}).addTo(mymap).bindPopup('<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
@@ -69,7 +69,7 @@ const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon}).addTo(
 
 //--------------------Yellow icons-----------------------------------
 const seoul = L.marker([35.907757, 127.766922], { icon: yellowIcon }).addTo( mymap );
-seoul.bindPopup(  '<h2> Early Years of a Taekwondo Master </h2> <p> Here has to be added some text for later </p> <img src = "assets/Choi in park 2018-10-05.png" width=400 height=280 />' );
+seoul.bindPopup(  '<h2> Early Years of a Taekwondo Master </h2> <p> Here has to be added some text for later </p> <img src = "assets/Choi in park.png" width=400 height=280 />' );
 
 const medalWorkshop = L.marker([-34.568358, -58.594658], {icon: yellowIcon}).addTo(mymap);
       medalWorkshop.bindPopup('<h2>Medal Workshop</h2><a href="https://vimeo.com/320748559?share=copy"><h3> Medal Workshop </h3> <p> </p> <img src = "assets/workshop_image.png" width=300 height=225 /></a>');
