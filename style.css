@@ -5,8 +5,10 @@
  .leaflet-popup-content{ 
     width: fit-content; 
     outline-width: thick;
-    padding-right: 99px; 
+    /* padding-right: 5vh;  */
+    padding-right: 99px;
 }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -15,8 +17,21 @@ html, body {
     z-index: 999; /* Adjust the value as needed */
 }
 
+h4{
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 26px;
+}
 
-
+h5{
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+}
 
   /* .leaflet-control-layers-overlays > label:first-child {
     display: none;
