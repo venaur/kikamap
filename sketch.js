@@ -152,7 +152,6 @@ var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido
 
 
 
-
 // var workSparingLayers = L.layerGroup([medalWorkshop, triglav, juventudCastelar, parroquia, costaSalguero,platense,campoMunicipal, 
 //     work1, work2, work3, work4, work5, work6, work7]);
 
