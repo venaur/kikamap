@@ -158,7 +158,6 @@ var competitionPoomsaeLayers = L.layerGroup([comp1, comp2, comp3, comp4]);
 var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido,triglav,campoMunicipal,parroquia,costaSalguero,exKDT,cenard,blackHeart,juventudCastelar,pedroEchague,medalWorkshop,fsion, notary]);
 
 
-
 // var workSparingLayers = L.layerGroup([medalWorkshop, triglav, juventudCastelar, parroquia, costaSalguero,platense,campoMunicipal, 
 //     work1, work2, work3, work4, work5, work6, work7]);
 

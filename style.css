@@ -1,22 +1,22 @@
 #aMap{
 /*    Height of map*/
-    height: 1100px; 
+    height: 100em; 
 }
-
  .leaflet-popup-content{ 
-    width: auto; 
+    width: fit-content; 
     outline-width: thick;
     padding-right: 99px; 
 }
-
 html, body {
     margin: 0;
     padding: 0;
 }
-
 .c-polyline {
-    z-index: 1000; /* Adjust the value as needed */
-  }
+    z-index: 999; /* Adjust the value as needed */
+}
+
+
+
 
   /* .leaflet-control-layers-overlays > label:first-child {
     display: none;
