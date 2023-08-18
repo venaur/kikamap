@@ -27,7 +27,7 @@ var yellowIcon = L.icon({
 var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent("<h1>INTRODUCTION!!!!</h1> <br> <h4> Welcome to this map exploring Taekwondo in <br>Buenos Aires. The markers are the locations <br> where I did my fieldwork. Click on them and <br>you will see a new pop-up. Some of them are <br>linked to short films and others just have a <br>description and image. On the top right you <br> can choose different settings. For example,<br> you can just choose a colour or you can look <br>at suggested routes...<br><br>Feel free to roam a about and enjoy the <br>journey into my PhD. <br> Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and <br>Henrike Neuhaus <br> **find the hidden one, it's a long story</h5>").openOn(mymap);
 
 //--------------------Red icons-----------------------------------
-const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon}).addTo(mymap).bindPopup('<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
+const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon}).addTo(mymap).bindPopup('<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <h4> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long term practitionsers with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </h4> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
 
 const peruBeach = L.marker([-34.472324, -58.492197], { icon: redIcon }).addTo(mymap);
       peruBeach.bindPopup("<b>Peru Beach</b><br>I am a popup.");
