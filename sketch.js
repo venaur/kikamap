@@ -22,6 +22,10 @@ var yellowIcon = L.icon({
   iconUrl: "icons/mustard.png",
   iconSize: [25.9, 45.8]});
 
+
+//intro popup
+var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent("<h1>INTRODUCTION!!!!</h1> <br> <h2> Hello there</h2>").openOn(mymap);
+
 //--------------------Red icons-----------------------------------
 const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon}).addTo(mymap).bindPopup('<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
 
@@ -31,7 +35,7 @@ const peruBeach = L.marker([-34.472324, -58.492197], { icon: redIcon }).addTo(my
 const blackHeart = L.marker([-34.699252, -58.608133], {icon: redIcon }).addTo(mymap).bindPopup('<h2>Black Heart</h2> <a href = "https://vimeo.com/297399379"> <h3> La Matanza Black Heart</h3> <img src = "assets/Black_heart.png" width = 400 height=253 </a>');
 
 const platense = L.marker([-34.541026, -58.482004], { icon: redIcon }).addTo(mymap);
-      platense.bindPopup('<h2>Training in Platense</h2> <p> Here has to be added some text for later </p> <img src = "assets/Platense_image.png" width=400 height=250 />').openPopup();
+      platense.bindPopup('<h2>Training in Platense</h2> <p> Here has to be added some text for later </p> <img src = "assets/Platense_image.png" width=400 height=250 />');//.openPopup();
 
 const lincoln = L.marker([-34.575294, -58.530092], { icon: redIcon }).addTo(mymap);
       lincoln.bindPopup('<h2>Training in San Martín</h2> <p> Here has to be added some text for later </p> <img src = "assets/Lincoln_image.png" width=400 height=280 />');
@@ -164,9 +168,9 @@ var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido
 // var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido,triglav,campoMunicipal,parroquia,costaSalguero,exKDT,cenard,blackHeart,juventudCastelar,pedroEchague,medalWorkshop,fsion, notary]);
 
 //------------markers--------------------------
-var workSparingMarkers = L.layerGroup([medalWorkshop, triglav, juventudCastelar, parroquia, costaSalguero,platense,campoMunicipal]);
-var trainingMarkers = L.layerGroup([asociacionChoi, blackHeart,notary,gymGuido,peruBeach, platense]);
-var competitionPoomsaeMarkers = L.layerGroup([costaSalguero, exKDT,pedroEchague,cenard,campoMunicipal]);
+var workSparingMarkers = L.layerGroup([medalWorkshop, fsion, notary]);
+var trainingMarkers = L.layerGroup([asociacionChoi, blackHeart,gymGuido,peruBeach, platense, lincoln, triglav, campoMunicipal, parroquia]);
+var competitionPoomsaeMarkers = L.layerGroup([costaSalguero, exKDT,pedroEchague,cenard, juventudCastelar]);
 
 
 mymap.on('overlayadd', function (event) {
@@ -214,10 +218,11 @@ const overlay = {
 };
 
 const markers = {
-  'Work & Sparring Markers': workSparingMarkers,
+  'All': allLayers,
+
+  'Work Markers': workSparingMarkers,
   'Training Markers': trainingMarkers,
-  'Competition & Poomsae Markers': competitionPoomsaeMarkers,
-  'All': allLayers
+  'Competition Markers': competitionPoomsaeMarkers,
 };
 
 const layerControl = L.control.layers(markers, overlay, {
