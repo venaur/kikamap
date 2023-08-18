@@ -174,7 +174,7 @@ var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido
 var workSparingMarkers = L.layerGroup([medalWorkshop, fsion, notary]);
 var trainingMarkers = L.layerGroup([asociacionChoi, blackHeart,gymGuido,peruBeach, platense, lincoln, triglav, campoMunicipal, parroquia]);
 var competitionPoomsaeMarkers = L.layerGroup([costaSalguero, exKDT,pedroEchague,cenard, juventudCastelar]);
-
+var intro = L.layerGroup([popup]); 
 //here is the function to draw the routes... 
 mymap.on('overlayadd', function (event) {
 const selectedLayer = event.layer;
@@ -231,6 +231,15 @@ const markers = {
 // like this the lines 'draw' the other way round it would not draw the lines... 
 const layerControl = L.control.layers(markers, overlay, {
   collapsed: false, // Set to false to keep the control open by default
+}).addTo(mymap);
+
+
+const introType ={
+  'Intro': intro
+};
+
+const introPopup = L.control.layers(null, introType,{
+  collapsed: false,
 }).addTo(mymap);
 
 
