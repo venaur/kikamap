@@ -65,7 +65,7 @@ const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon}).addTo(
 
 //--------------------Yellow icons-----------------------------------
 const seoul = L.marker([35.907757, 127.766922], { icon: yellowIcon }).addTo( mymap );
-seoul.bindPopup(  '<h2> Early Years of a Taekwondo Master </h2> <p> Here has to be added some text for later </p> <img src = "assets/Choi in park 2018-10-05.png" width=400 height=280 />' );
+seoul.bindPopup(  '<h2> Early Years of a Taekwondo Master </h2> <p> Here has to be added some text for later </p> <img src = "assets/Choi in park.png" width=400 height=280 />' );
 
 const medalWorkshop = L.marker([-34.568358, -58.594658], {icon: yellowIcon}).addTo(mymap);
       medalWorkshop.bindPopup('<h2>Medal Workshop</h2><a href="https://vimeo.com/320748559?share=copy"><h3> Medal Workshop </h3> <p> </p> <img src = "assets/workshop_image.png" width=300 height=225 /></a>');
