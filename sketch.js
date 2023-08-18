@@ -58,7 +58,7 @@ const cenard = L.marker([-34.54273, -58.454333], {icon: blueIcon}).addTo(mymap);
       cenard.bindPopup("<b>Cenard</b><br>I am a popup.");
 
 const juventudCastelar = L.marker([-34.664928, -58.656449], {icon: blueIcon}).addTo(mymap);
-      juventudCastelar.bindPopup("<b>Juventud Castelar</b><br>I am a popup.");
+      juventudCastelar.bindPopup('<h2> Sunday Competition </h2> <p> Here has to be added some text for later </p> <img src = "assets/juventudCastelar.png" width=400 height=280 />');
 
 const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Pedro Echague</h2><a href="https://youtu.be/inrmC-Ci4gI"><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /></a>');
 
