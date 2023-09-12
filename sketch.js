@@ -30,7 +30,7 @@ var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent('<img src="asse
 
 
 //--------------------Red icons-----------------------------------
-const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon}).addTo(mymap).bindPopup('<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
+const asociacionChoi = L.marker([-34.595508, -58.426375], { icon: redIcon}).addTo(mymap).bindPopup('<h2> Asociacion Choi</h2> <a href ="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> <h4> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long term practitionsers with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </h4> <img src = "assets/sabon_master.png" width=400 height=253 /></a>');
 
 const peruBeach = L.marker([-34.472324, -58.492197], { icon: redIcon }).addTo(mymap);
       peruBeach.bindPopup("<b>Peru Beach</b><br>I am a popup.");
