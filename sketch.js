@@ -44,7 +44,7 @@ const lincoln = L.marker([-34.575294, -58.530092], { icon: redIcon }).addTo(myma
       lincoln.bindPopup('<h2>Training in San Martín</h2> <p> Here has to be added some text for later </p> <img src = "assets/Lincoln_image.png" width=400 height=280 />');
 
 const gymGuido = L.marker([-34.58936, -58.39052], { icon: redIcon}).addTo(mymap);
-      gymGuido.bindPopup("<b>Gym Guido</b><br>I am a popup.");
+      gymGuido.bindPopup('<h2> Recoleta </h2> <p> Here has to be added some text for later </p> <img src = "assets/Gym_Guido01.png" width=400 height=280 /> </p> <img src = "assets/Gym_Guido02.png" width=400 height=280 />');
 
 const triglav = L.marker([-34.621898, -58.529336], { icon: redIcon }).addTo(mymap).bindPopup('<h2>Triglav</h2> <a href = "https://youtu.be/Xq9K8g71-N8"> <h3> Chapter 4 Joint Training </h3> <img src = "assets/ch_4_joint_training.png" width=400 height=281 /> </a>');
 
@@ -52,7 +52,7 @@ const campoMunicipal = L.marker([-34.498664, -58.522979], {icon: redIcon}).addTo
       campoMunicipal.bindPopup('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <a href = "https://youtu.be/GC3F5JBdskY"> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 />');
 
 const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon}).addTo(mymap);
-      parroquia.bindPopup('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "Parroquia01.png" width=400 height=250 />');
+      parroquia.bindPopup('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 />');
 
 
 //--------------------blue icons-----------------------------------
