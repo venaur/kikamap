@@ -25,14 +25,14 @@ var yellowIcon = L.icon({
 
 
 //intro popup
-// var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent('<img src="assets/handContour.png" width=400 height=400/> <h1>INTRODUCTION!!!!</h1> <br> <h4> Welcome to this map exploring Taekwondo in <br>Buenos Aires. The markers are the locations <br> where I did my fieldwork. Click on them and <br>you will see a new pop-up. Some of them are <br>linked to short films and others just have a <br>description and image. On the top right you <br> can choose different settings. For example,<br> you can just choose a colour or you can look <br>at suggested routes...<br><br>Feel free to roam a about and enjoy the <br>journey into my PhD. <br> Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and <br>Henrike Neuhaus <br> **find the hidden one, it is a long story</h5>').openOn(mymap);
+// var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent('<img src="assets/handContour.png" width=400 height=400/> <h1>INTRODUCTION!!!!</h1> <br> <h4> Welcome to this map exploring Taekwondo in <br>Buenos Aires. The markers are the locations <br> where I did my fieldwork. Click on them and <br>you will see a new pop-up. Some of them are linked to short films and others just have a description and image. On the top right you can choose different settings. For example, you can just choose a colour or you can look at suggested routes...<br><br>Feel free to roam a about and enjoy the <br>journey into my PhD. <br> Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and <br>Henrike Neuhaus <br> **find the hidden one, it is a long story</h5>').openOn(mymap);
 var popup = L.popup({
   closeButton: false,
   autoClose: false,
   className: 'intro-custom-popup'
 })
 .setLatLng([-34.615, -58.51047])
-.setContent(' <h1>INTRODUCTION!!!!</h1>  <h4> Welcome to this map exploring Taekwondo in Buenos Aires. The markers are the locations where I did my fieldwork. Click on them and you will see a new pop-up. Some of them  are linked to short films and others just have a description<br> and image. On the top right you can choose different settings. For example, you can just choose a colour or you can look at suggested routes...<br><br>Feel free to roam a about and enjoy the journey into my PhD. <br>Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and Henrike Neuhaus <br> **find the hidden one, it is a long story</h5> <br><br><br><br>')
+.setContent(' <h1>INTRODUCTION!!!!</h1>  <h4> Welcome to this map exploring Taekwondo in Buenos Aires. The markers are the locations where I did my fieldwork. Click on them and you will see a new pop-up. Some of them  are linked to short films and others just have a description and image. On the top right you can choose different settings. For example, you can just choose a colour or you can look at suggested routes...<br><br>Feel free to roam a about and enjoy the journey into my PhD. <br>Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and Henrike Neuhaus <br> **find the hidden one, it is a long story</h5> <br><br><br><br>')
 .openOn(mymap);
 
 
