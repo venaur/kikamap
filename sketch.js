@@ -9,7 +9,7 @@ const tiles = L.tileLayer(
 
     //red Icon
 var redIcon = L.icon({
-  iconUrl: "icons/magenta.jpg",
+  iconUrl: "icons/magenta.png",
   iconSize: [25.9, 45.8]});
 
 //blue Icon
