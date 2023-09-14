@@ -14,7 +14,7 @@ var redIcon = L.icon({
 
 //blue Icon
 var blueIcon = L.icon({
-  iconUrl: "icons/teal1.png",
+  iconUrl: "icons/tealIcon.png",
   iconSize: [25.9, 45.8]});
 
 //Yellow Icon
