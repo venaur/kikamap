@@ -38,12 +38,8 @@ h5{
 
 .intro-custom-popup .leaflet-popup-content-wrapper {
   background-image: url('assets/handContour.png');
-<<<<<<< HEAD
   background-size: 90%;
   background-color: #14c2a8b8;
-=======
-  background-repeat: no-repeat;
->>>>>>> 0c2cfaf153169aa249f48db1d247e55d1514ba06
   color: #000000;
   width: 25vw; /* Allow the width to adjust to content */
   border-radius: 10px;
