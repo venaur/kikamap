@@ -3,12 +3,6 @@
   height: 150em;
 }
 
-/* .leaflet-popup-content{ 
-  width: fit-content; 
-  outline-width: thick;
-  padding-right: 99px;
-} */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -37,9 +31,10 @@ h5{
 .intro-custom-popup .leaflet-popup-content-wrapper {
   background-image: url('assets/handContour.png');
   background-size: 90%;
+  background-repeat: no-repeat;
   background-color: #14c2a8b8;
   color: #000000;
-  width: 25vw; /* Allow the width to adjust to content */
+  width: 28vw; /* Allow the width to adjust to content */
   border-radius: 10px;
   padding: 20px; /* Add padding to create space for the text */
   box-sizing: border-box;
@@ -145,4 +140,64 @@ h5{
   line-height: 22px;
   white-space: wrap; 
   width: 180%; 
+}
+
+
+
+
+
+
+
+
+.CS-custom-popup .leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #000000;
+  width: 200%; 
+  height: 55vh;
+  border-radius: 10px;
+}
+
+.CS-custom-popup .leaflet-popup-content-wrapper h2{
+  font-size: 20px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: wrap; 
+  width: 138%;
+}
+/* CSS for the popup content */
+.popup-content {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 1vw;
+}
+
+/* CSS for each column within the popup content */
+.popup-column {
+  flex: 1; 
+  text-align: center; 
+  width: 100%;
+}
+
+.popup-column img {
+  height: 20vh;
+  width: auto; 
+}
+
+.popup-column iframe {
+  height: 20vh;
+  width: auto; 
+}
+
+
+
+
+
+.image-container {
+  text-align: center; 
+}
+
+.image-container h3 {
+  margin-top: 10px; 
 }

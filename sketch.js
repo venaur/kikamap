@@ -38,7 +38,7 @@ var popup = L.popup({
 
 //--------------------Red icons-----------------------------------
 const asociacionChoi = L.marker([-34.595508, -58.426375], {icon: redIcon}).addTo(mymap);
-const asociacionChoiPopup = L.popup({closeButton: false, autoClose: false, className: 'AC-custom-popup'}).setContent('<h2> Asociacion Choi</h2>  <h5> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long-term practitioners with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </h5> <a href="https://vimeo.com/346124939"> <h3> Sabon = Master </h3> </a><img src="assets/sabon_master.png" width=400 height=253 /></a>');
+const asociacionChoiPopup = L.popup({closeButton: false, autoClose: false, className: 'AC-custom-popup'}).setContent('<h2> Asociacion Choi</h2>  <h5> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long-term practitioners with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </h5> <h3> Sabon = Master </h3> </a><img src="assets/sabon_master.png" width=400 height=253 /><iframe src="https://player.vimeo.com/video/346124939?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.1 Sabon = Master"></iframe>');
 asociacionChoi.bindPopup(asociacionChoiPopup);
 asociacionChoi.bindTooltip('Asociacion Choi <br> film: Sa Bum = Master'); // hover text
 
@@ -48,7 +48,7 @@ const peruBeach = L.marker([-34.472324, -58.492197], { icon: redIcon }).addTo(my
 
 
 const blackHeart = L.marker([-34.699252, -58.608133], {icon: redIcon }).addTo(mymap);
-const blackHeartPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Black Heart</h2> <a href = "https://vimeo.com/297399379"> <h3> La Matanza Black Heart</h3> <img src = "assets/Black_heart.png" width = 400 height=253 </a>');
+const blackHeartPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Black Heart</h2> <h3> La Matanza Black Heart</h3> <img src = "assets/Black_heart.png" width = 400 height=253/><iframe src="https://player.vimeo.com/video/297399379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 2.1 Family Affairs"></iframe>');
 blackHeart.bindPopup(blackHeartPopup);
 blackHeart.bindTooltip('La Matanza <br> film: Family Affairs'); // hover text
 
@@ -78,7 +78,7 @@ gymGuido.bindTooltip('Recoleta'); // hover text
 
 // const triglav = L.marker([-34.621898, -58.529336], { icon: redIcon }).addTo(mymap).bindPopup('<h2>Triglav</h2> <a href = "https://youtu.be/Xq9K8g71-N8"> <h3> Chapter 4 Joint Training </h3> <img src = "assets/ch_4_joint_training.png" width=400 height=281 /> </a>');
 const triglav = L.marker([-34.621898, -58.529336], {icon: redIcon }).addTo(mymap);
-const triglavPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Triglav</h2> <a href = "https://youtu.be/Xq9K8g71-N8"> <h3> Chapter 4 Joint Training </h3> <img src = "assets/ch_4_joint_training.png" width=400 height=281 /> </a>');
+const triglavPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Triglav</h2><h3> Chapter 4 Joint Training </h3> <img src = "assets/ch_4_joint_training.png" width=400 height=281 /> <iframe src="https://player.vimeo.com/video/283082158?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 4.1 Joint Training"></iframe>');
 triglav.bindPopup(triglavPopup);
 triglav.bindTooltip('Triglav <br> film: Joint Training'); // hover text
 
@@ -86,7 +86,7 @@ triglav.bindTooltip('Triglav <br> film: Joint Training'); // hover text
 // const campoMunicipal = L.marker([-34.498664, -58.522979], {icon: redIcon}).addTo(mymap);
 //       campoMunicipal.bindPopup('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <a href = "https://youtu.be/GC3F5JBdskY"> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 />');
 const campoMunicipal = L.marker([-34.498664, -58.522979], {icon: redIcon }).addTo(mymap);
-const campoMunicipalPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <a href = "https://youtu.be/GC3F5JBdskY"> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 />');
+const campoMunicipalPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/863963193?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.2 Iob Chagui"></iframe>');
 campoMunicipal.bindPopup(campoMunicipalPopup);
 campoMunicipal.bindTooltip('Campo Municipal <br> film: Iob Chagui'); // hover text
 
@@ -94,15 +94,15 @@ campoMunicipal.bindTooltip('Campo Municipal <br> film: Iob Chagui'); // hover te
 // const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon}).addTo(mymap);
 //       parroquia.bindPopup('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 />');
 const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon }).addTo(mymap);
-const parroquiaPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 />');
+const parroquiaPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/321468806?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Inside/Outside"></iframe>');
 parroquia.bindPopup(parroquiaPopup);
-parroquia.bindTooltip('Villa 11 14 <br> film: Praying for Taekwondo'); // hover text
+parroquia.bindTooltip('Villa 11 14 <br> Film: Praying for Taekwondo'); // hover text
 
 
 //--------------------blue icons-----------------------------------
-//const costaSalguero = L.marker([-34.569107, -58.403364], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Costa Salguero</h2> <a href = "https://vimeo.com/320754008"><h3>Lara Gourmet</h3> <img src = "assets/Lara_Gourmet.png" width = 400 height=260 </a> <a href = "https://youtu.be/X6-HZ3ol340"> <h3> Sunday Games</h3> <img src = "assets/ch_4_SundayGames.png" width=400 height=205/> </a>');
-const costaSalguero = L.marker([-34.569107, -58.403364], {icon: blueIcon }).addTo(mymap);
-const costaSalgueroPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Costa Salguero</h2> <a href = "https://vimeo.com/320754008"><h3>Lara Gourmet</h3> <img src = "assets/Lara_Gourmet.png" width = 400 height=260 </a> <a href = "https://youtu.be/X6-HZ3ol340"> <h3> Sunday Games</h3> <img src = "assets/ch_4_SundayGames.png" width=400 height=205/> </a>');
+// const costaSalguero = L.marker([-34.569107, -58.403364], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Costa Salguero</h2> <a href = "https://vimeo.com/320754008"><h3>Lara Gourmet</h3> <img src = "assets/Lara_Gourmet.png" width = 400 height=260 </a> <a href = "https://youtu.be/X6-HZ3ol340"> <h3> Sunday Games</h3> <img src = "assets/ch_4_SundayGames.png" width=400 height=205/> </a>').addTo(mymap);
+const costaSalguero = L.marker([-34.542026, -58.454004], {icon: blueIcon }).addTo(mymap);
+const costaSalgueroPopup = L.popup({closeButton: false, autoClose: false, className: 'CS-custom-popup'}).setContent('<h2>Costa Salguero</h2>    <div class="popup-content"> <div class="popup-column"> <div class="image-container"><h3>Lara Gourmet</h3><img src="assets/Lara_Gourmet.png" width="400" height="260" alt="Lara Gourmet" /></div> </div> <div class="popup-column"> <h3>Sunday Games</h3>  <div class="image-container"><img src="assets/ch_4_SundayGames.png" width="400" height="205" alt="Sunday Games" /></div> </div></div><div class="popup-content"><div class="popup-column"><iframe src="https://player.vimeo.com/video/329361514?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 4.2 Sunday Games"></iframe></div><div class="popup-column"> <iframe src="https://player.vimeo.com/video/320754008?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.1 Lara Gourmet"></iframe></div></div>');
 costaSalguero.bindPopup(costaSalgueroPopup);
 costaSalguero.bindTooltip('G1 Competition <br> film: Lara Gourmet <br> film: Sunday Games'); // hover text
 
@@ -130,7 +130,7 @@ juventudCastelar.bindTooltip('Castelar'); // hover text
 
 // const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Pedro Echague</h2><a href="https://youtu.be/inrmC-Ci4gI"><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /></a>');
 const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon }).addTo(mymap);
-const pedroEchaguePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Pedro Echague</h2><a href="https://youtu.be/inrmC-Ci4gI"><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /></a>');
+const pedroEchaguePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Pedro Echague</h2><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /><iframe src="https://player.vimeo.com/video/863964562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.3 Play, Games, Sport"></iframe>');
 pedroEchague.bindPopup(pedroEchaguePopup);
 pedroEchague.bindTooltip('Pedro Echagüe <br> film: Play, Games, Sport'); // hover text
 
@@ -144,8 +144,9 @@ seoul.bindTooltip('Seoul'); // hover text
 
 
 const medalWorkshop = L.marker([-34.568358, -58.594658], {icon: yellowIcon}).addTo(mymap);
-      medalWorkshop.bindPopup('<h2>Medal Workshop</h2><a href="https://vimeo.com/320748559?share=copy"><h3> Medal Workshop </h3> <p> </p> <img src = "assets/workshop_image.png" width=300 height=225 /></a>');
-      medalWorkshop.bindTooltip('Medal Workshop <br> film: Medal Workshop'); // hover text
+const medalWorkshopPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Medal Workshop</h2><h3> Medal Workshop </h3> <img src = "assets/workshop_image.png" width=400 height=300 /> <iframe src="https://player.vimeo.com/video/320748559?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 2.2 Medal Workshop"></iframe>');
+medalWorkshop.bindPopup(medalWorkshopPopup);
+medalWorkshop.bindTooltip('Medal Workshop <br> film: Medal Workshop'); // hover text
 
 
 // const fsion = L.marker([-34.578199, -58.509716], { icon: yellowIcon }, mymap.getMaxZoom()).addTo(mymap);
