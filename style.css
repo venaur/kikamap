@@ -35,13 +35,31 @@ h5{
   white-space: wrap;
 }
 
+.intro-custom-popup .leaflet-popup-content-wrapper {
+  background-image: url('assets/handContour.png');
+  background-size:45vw;
+  background-color: #9e9f73ca;
+  color: #000000;
+  width: 35vw; /* Allow the width to adjust to content */
+  border-radius: 10px;
+  padding: 20px; /* Add padding to create space for the text */
+  box-sizing: border-box;
+}
+
+.intro-custom-popup h4, .intro-custom-popup h5 {
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: normal; /* Allow text to wrap */
+  width: 30vw; /* Allow the text to fill the available width */
+}
+/* 
 .intro-custom-popup .leaflet-popup-content-wrapper{
-  background-image: url('assets/handContour.png'); /* Set the image as the background */
+  background-image: url('assets/handContour.png'); 
   background-size: cover;
-  /* background-color: #05a9a9ca; */
   background-color: #9e9f73ca;
   
-  /* background: #ffffff; */
   color: #000000;
   width: 135%; 
   border-radius: 10px;
@@ -61,7 +79,7 @@ h5{
   line-height: 22px;
   white-space: wrap; 
   width: 135%;
-}
+} */
 /* -------------------------------------- */
 .AC-custom-popup .leaflet-popup-content-wrapper {
   background: #ffffff;
@@ -105,3 +123,10 @@ h5{
   color:rgb(64, 93, 162);
   width: 100px;
 }
+
+
+
+
+
+
+
