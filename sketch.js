@@ -95,7 +95,7 @@ const costaSalgueroPopup = L.popup({closeButton: false, autoClose: false, classN
 costaSalguero.bindPopup(costaSalgueroPopup);
 
 const exKDT = L.marker([-34.570145, -58.397478], { icon: blueIcon }).addTo(mymap);
-      exKDT.bindPopup("<b>Ex KDT</b><br>I am a popup.");
+      exKDT.bindPopup("<b>Ex KDT</b><br> I observed one competition here on a warm sunday and as I cycled there and was not in the mood to schlepp my camera equipment, I opted for notes only. It was nice for once to be there able to observe and hold the paddle while my the competitor warmed up and instead of finding nice angles to film a fight, we were talking about making some pocket money as a referee... ");
 
 // const cenard = L.marker([-34.54273, -58.454333], {icon: blueIcon}).addTo(mymap);
 //       cenard.bindPopup('<h2> CENARD </h2> <p> Here has to be added some text for later </p> <img src = "assets/CENARD.png" width=400 height=280 /> </p> <img src = "assets/CENARD_01.png" width=400 height=280 />');
@@ -128,7 +128,7 @@ const medalWorkshop = L.marker([-34.568358, -58.594658], {icon: yellowIcon}).add
 // const fsion = L.marker([-34.578199, -58.509716], { icon: yellowIcon }, mymap.getMaxZoom()).addTo(mymap);
 //       fsion.bindPopup('<h2>Fsion</h2> <p> Here has to be added some text for later </p> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
 const fsion = L.marker([-34.578199, -58.509716], {icon: yellowIcon }).addTo(mymap);
-const fsionPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Fsion</h2> <p> Here has to be added some text for later </p> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
+const fsionPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Fsion</h2> <p> F-Sion is a subsidiary company that distributes WT-recognised euqipment. <br> films connected and related are: <br> Medal Workshop <br> Locations:<br> Lincoln, Platense  </p> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
 fsion.bindPopup(fsionPopup);
 
 // const notary = L.marker([-34.606004, -58.386153], { icon: yellowIcon }).addTo(mymap);
