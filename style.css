@@ -39,3 +39,17 @@ h5{
     display: none;
   } */
 
+  /* CSS for the custom popup class */
+.custom-popup-class {
+/* Add your custom styles here */
+background-color: #fff;
+/* border: 2px solid #f00;
+padding: 10px; */
+font-size: 16px;
+width: fit-content; 
+outline-width: thick;
+padding-right: 99px;
+z-index: 2;
+
+}
+
