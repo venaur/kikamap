@@ -57,8 +57,8 @@ h5{
   text-align: left;
   font-family: Verdana;
   line-height: 22px;
-  white-space: wrap; /* Change this to white-space: normal; */
-  width: 135%; /* Ensure the h5 element fills the available width */
+  white-space: wrap; 
+  width: 135%;
 }
 /* -------------------------------------- */
 .AC-custom-popup .leaflet-popup-content-wrapper {
