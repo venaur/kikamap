@@ -1,13 +1,13 @@
 #aMap{
 /*    Height of map*/
-    height: 100em; 
+  height: 100em; 
 }
 
-.leaflet-popup-content{ 
+/* .leaflet-popup-content{ 
   width: fit-content; 
   outline-width: thick;
   padding-right: 99px;
-}
+} */
 
 html, body {
     margin: 0;
@@ -23,33 +23,83 @@ h4{
   text-align: left;
   font-family: Verdana;
   line-height: 26px;
-
   /* white-space: wrap; */
 }
 
 h5{
   font-size: 14px;
-  white-space: nowrap;
   text-align: left;
   font-family: Verdana;
   line-height: 22px;
-  /* white-space: wrap; */
-}
-  /* .leaflet-control-layers-overlays > label:first-child {
-    display: none;
-  } */
-
-  /* CSS for the custom popup class */
-.custom-popup-class {
-/* Add your custom styles here */
-background-color: #fff;
-/* border: 2px solid #f00;
-padding: 10px; */
-font-size: 16px;
-width: fit-content; 
-outline-width: thick;
-padding-right: 99px;
-z-index: 2;
-
+  white-space: wrap;
 }
 
+.intro-custom-popup .leaflet-popup-content-wrapper{
+  background-image: url('assets/handContour.png'); /* Set the image as the background */
+  background-size: cover;
+  background-color: #05a9a9ca;
+  
+  /* background: #ffffff; */
+  color: #000000;
+  width: 135%; 
+  border-radius: 10px;
+}
+.intro-custom-popup h4 {
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: wrap; /* Change this to white-space: normal; */
+  width: 143%; /* Ensure the h5 element fills the available width */
+}
+.intro-custom-popup h5 {
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: wrap; /* Change this to white-space: normal; */
+  width: 135%; /* Ensure the h5 element fills the available width */
+}
+/* -------------------------------------- */
+.AC-custom-popup .leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #000000;
+  width: 128%; /* Maintain the fixed width for the popup */
+  border-radius: 10px;
+}
+.AC-custom-popup h5 {
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: wrap; 
+  width: 135%; 
+}
+.AC-custom-popup.leaflet-popup-content-wrapper a {
+  color:rgb(64, 93, 162);
+  width: 100px;
+}
+.AC-custom-popup .leaflet-popup-tip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+/* -------------------------------------- */
+.BH-custom-popup .leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #000000;
+  width: 128%; 
+  border-radius: 10px;
+}
+.BH-custom-popup h5 {
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: wrap; 
+  width: 135%; 
+}
+.BH-custom-popup .leaflet-popup-content-wrapper a{
+  color:rgb(64, 93, 162);
+  width: 100px;
+}
