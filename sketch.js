@@ -163,9 +163,6 @@ notary.bindPopup(notaryPopup)
 notary.bindTooltip('Notary'); // hover text
 
 //--------------------Routes ---------------------------------------
-//This line is static
-// const route = L.polyline([[-34.568358, -58.594658],[-34.606004, -58.386153]], {color: 'blue', weight: 3}).addTo(mymap);
-  
 //--------coordinates----------
 const aChCoord = [[-34.595508, -58.426375]];
 const peruBCoord = [[-34.472324, -58.492197]];
@@ -238,18 +235,6 @@ var trainingLayers = L.layerGroup([training1, training2, training3, training4, t
 var competitionPoomsaeLayers = L.layerGroup([comp1, comp2, comp3, comp4]);
 
 var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido,triglav,campoMunicipal,parroquia,costaSalguero,exKDT,cenard,blackHeart,juventudCastelar,pedroEchague,medalWorkshop,fsion, notary]);
-
-
-// var workSparingLayers = L.layerGroup([medalWorkshop, triglav, juventudCastelar, parroquia, costaSalguero,platense,campoMunicipal, 
-//     work1, work2, work3, work4, work5, work6, work7]);
-
-// var trainingLayers = L.layerGroup([asociacionChoi, blackHeart,notary,gymGuido,peruBeach, platense,
-//     training1, training2, training3, training4, training5 ]);
-
-// var competitionPoomsaeLayers = L.layerGroup([costaSalguero, exKDT,pedroEchague,cenard,campoMunicipal,
-//     comp1, comp2, comp3, comp4]);
-
-// var allLayers = L.layerGroup([asociacionChoi,peruBeach,platense,lincoln,gymGuido,triglav,campoMunicipal,parroquia,costaSalguero,exKDT,cenard,blackHeart,juventudCastelar,pedroEchague,medalWorkshop,fsion, notary]);
 
 //------------markers--------------------------
 var workSparingMarkers = L.layerGroup([medalWorkshop, fsion, notary]);
