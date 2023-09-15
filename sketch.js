@@ -100,7 +100,7 @@ parroquia.bindTooltip('Villa 11 14 <br> Film: Praying for Taekwondo'); // hover 
 
 
 //--------------------blue icons-----------------------------------
-// const costaSalguero = L.marker([-34.569107, -58.403364], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Costa Salguero</h2> <a href = "https://vimeo.com/320754008"><h3>Lara Gourmet</h3> <img src = "assets/Lara_Gourmet.png" width = 400 height=260 </a> <a href = "https://youtu.be/X6-HZ3ol340"> <h3> Sunday Games</h3> <img src = "assets/ch_4_SundayGames.png" width=400 height=205/> </a>').addTo(mymap);
+// const costaSalguero = L.marker([-34.54273, -58.454333], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Costa Salguero</h2> <a href = "https://vimeo.com/320754008"><h3>Lara Gourmet</h3> <img src = "assets/Lara_Gourmet.png" width = 400 height=260 </a> <a href = "https://youtu.be/X6-HZ3ol340"> <h3> Sunday Games</h3> <img src = "assets/ch_4_SundayGames.png" width=400 height=205/> </a>').addTo(mymap);
 const costaSalguero = L.marker([-34.542026, -58.454004], {icon: blueIcon }).addTo(mymap);
 const costaSalgueroPopup = L.popup({closeButton: false, autoClose: false, className: 'CS-custom-popup'}).setContent('<h2>Costa Salguero</h2>    <div class="popup-content"> <div class="popup-column"> <div class="image-container"><h3>Lara Gourmet</h3><img src="assets/Lara_Gourmet.png" width="400" height="260" alt="Lara Gourmet" /></div> </div> <div class="popup-column"> <h3>Sunday Games</h3>  <div class="image-container"><img src="assets/ch_4_SundayGames.png" width="400" height="205" alt="Sunday Games" /></div> </div></div><div class="popup-content"><div class="popup-column"><iframe src="https://player.vimeo.com/video/329361514?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 4.2 Sunday Games"></iframe></div><div class="popup-column"> <iframe src="https://player.vimeo.com/video/320754008?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.1 Lara Gourmet"></iframe></div></div>');
 costaSalguero.bindPopup(costaSalgueroPopup);
@@ -114,7 +114,7 @@ exKDT.bindPopup(exKDTPopup);
 exKDT.bindTooltip('exKDT'); // hover text
 
       
-// const cenard = L.marker([-34.54273, -58.454333], {icon: blueIcon}).addTo(mymap);
+// const cenard = L.marker([-34.569107, -58.403364], {icon: blueIcon}).addTo(mymap);
 //       cenard.bindPopup('<h2> CENARD </h2> <p> Here has to be added some text for later </p> <img src = "assets/CENARD.png" width=400 height=280 /> </p> <img src = "assets/CENARD_01.png" width=400 height=280 />');
 const cenard = L.marker([-34.569107, -58.403364], {icon: blueIcon }).addTo(mymap);
 const cenardPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> CENARD </h2> <p> The CENARD is the main training ground for national sports competitors </p> <img src = "assets/CENARD.png" width=400 height=260 /> </p> <img src = "assets/CENARD_01.png" width=400 height=260 />');
@@ -154,7 +154,7 @@ medalWorkshop.bindTooltip('Medal Workshop <br> film: Medal Workshop'); // hover 
 const fsion = L.marker([-34.578199, -58.509716], {icon: yellowIcon }).addTo(mymap);
 const fsionPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Fsion</h2> <h5> F-Sion is a subsidiary company that distributes WT-recognised euqipment. <br> films connected and related are: <br> Medal Workshop <br> Locations:<br> Lincoln, Platense  </h5> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
 fsion.bindPopup(fsionPopup);
-fsion.bindTooltip('Fsion'); // hover text
+fsion.bindTooltip('F-sion'); // hover text
 
 // const notary = L.marker([-34.606004, -58.386153], { icon: yellowIcon }).addTo(mymap);
 //       notary.bindPopup('<h2>Notary</h2> <p> Here has to be added some text for later </p> <img src = "assets/Notary_image.png" width=400 height=280 />');
