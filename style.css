@@ -88,6 +88,14 @@ h5{
   white-space: wrap; 
   width: 135%; 
 }
+.BH-custom-popup p {
+  font-size: 12px;
+  text-align: left;
+  font-family: Verdana;
+  line-height: 22px;
+  white-space: wrap; 
+  width: 135%; 
+}
 .BH-custom-popup .leaflet-popup-content-wrapper a{
   color:rgb(64, 93, 162);
   width: 100px;

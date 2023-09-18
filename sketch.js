@@ -1,5 +1,3 @@
-
-
 //start point on map
 const mymap = L.map("aMap").setView([-40.895522, -58.47602], 12);
 const tiles = L.tileLayer(
@@ -21,8 +19,6 @@ var blueIcon = L.icon({
 var yellowIcon = L.icon({
   iconUrl: "icons/mustard.png",
   iconSize: [25.9, 45.8]});
-
-
 
 //intro popup
 // var popup = L.popup().setLatLng([-34.577, -58.42227]).setContent('<img src="assets/handContour.png" width=400 height=400/> <h1>INTRODUCTION!!!!</h1> <br> <h4> Welcome to this map exploring Taekwondo in <br>Buenos Aires. The markers are the locations <br> where I did my fieldwork. Click on them and <br>you will see a new pop-up. Some of them are linked to short films and others just have a description and image. On the top right you can choose different settings. For example, you can just choose a colour or you can look at suggested routes...<br><br>Feel free to roam a about and enjoy the <br>journey into my PhD. <br> Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and <br>Henrike Neuhaus <br> **find the hidden one, it is a long story</h5>').openOn(mymap);
@@ -46,16 +42,13 @@ asociacionChoi.bindTooltip('Asociacion Choi <br> Film: Sa Bum = Master'); // hov
 const peruBeach = L.marker([-34.472324, -58.492197], {icon: redIcon}).addTo(mymap);
 const peruBeachPopup = L.popup({closeButton: false, autoClose: false, className: 'AC-custom-popup'}).setContent('<h2>San Isidro</h2> <p> Here comenced the journey into Taekwondo </p> <img src = "assets/peruBeach02.png" width=400 height=250 /> <img src = "assets/peruBeach01.png" width=400 height=250 />');
 peruBeach.bindPopup(peruBeachPopup);
-      
-      
-      peruBeach.bindTooltip('San Isidro'); // hover text
+peruBeach.bindTooltip('San Isidro'); // hover text
 
 
 const blackHeart = L.marker([-34.699252, -58.608133], {icon: redIcon }).addTo(mymap);
-const blackHeartPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Black Heart</h2> <h3> Film: Family Affairs <br> I met the instructor through the saturday black belt trainings in -Asociacion Choi- and I was invited to observe the class. <br> After the 3 hour long interview the son and I sat down together watched the material and selected statements that we considered important to show in the film.</h3> <img src = "assets/Black_heart.png" width = 400 height=253/><iframe src="https://player.vimeo.com/video/297399379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 2.1 Family Affairs"></iframe>');
+const blackHeartPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Black Heart</h2> <h3> Film: Family Affairs</h3><p> I met the instructor through the saturday black belt trainings in -Asociacion Choi- and I was invited to observe the class. <br> After the 3 hour long interview the son and I sat down together watched the material and selected statements that we considered important to show in the film.</p> <img src = "assets/Black_heart.png" width = 400 height=253/><iframe src="https://player.vimeo.com/video/297399379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 2.1 Family Affairs"></iframe>');
 blackHeart.bindPopup(blackHeartPopup);
 blackHeart.bindTooltip('La Matanza <br> film: Family Affairs'); // hover text
-
 
 // const platense = L.marker([-34.541026, -58.482004], { icon: redIcon }).addTo(mymap);
 //       platense.bindPopup('<h2>Training in Platense</h2> <p> Here has to be added some text for later </p> <img src = "assets/Platense_image.png" width=400 height=250 />');//.openPopup();
@@ -63,7 +56,6 @@ const platense = L.marker([-34.541026, -58.482004], {icon: redIcon }).addTo(myma
 const platensePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Training in Platense</h2> <p> We were training here regularly after the group moved from -lincoln- here. <br> At this athletic club, they offer a broad range of sporting activities and my interlocutor organised an interclub tournament for children for which they made the medals. <br> Linked locations and films: <br> Medal Workshop <br> Lincoln <br> CENARD <br> G1 Competition <br> Triglav </p> <img src = "assets/Platense_image.png" width=400 height=250 />');
 platense.bindPopup(platensePopup);
 platense.bindTooltip('Platense'); // hover text
-
 
 // const lincoln = L.marker([-34.575294, -58.530092], { icon: redIcon }).addTo(mymap);
 //       lincoln.bindPopup('<h2>Training in San Martín</h2> <p> Here has to be added some text for later </p> <img src = "assets/Lincoln_image.png" width=400 height=280 />');
@@ -93,7 +85,6 @@ const campoMunicipal = L.marker([-34.498664, -58.522979], {icon: redIcon }).addT
 const campoMunicipalPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/863963193?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.2 Iob Chagui"></iframe>');
 campoMunicipal.bindPopup(campoMunicipalPopup);
 campoMunicipal.bindTooltip('Campo Municipal <br> film: Iob Chagui'); // hover text
-
 
 // const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon}).addTo(mymap);
 //       parroquia.bindPopup('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 />');
@@ -146,12 +137,10 @@ const seoulPopup = L.popup({closeButton: false, autoClose: false, className: 'Se
 seoul.bindPopup(seoulPopup);
 seoul.bindTooltip('Seoul'); // hover text
 
-
 const medalWorkshop = L.marker([-34.568358, -58.594658], {icon: yellowIcon}).addTo(mymap);
 const medalWorkshopPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Medal Workshop</h2><h3> Medal Workshop </h3> <img src = "assets/workshop_image.png" width=400 height=300 /> <iframe src="https://player.vimeo.com/video/320748559?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 2.2 Medal Workshop"></iframe>');
 medalWorkshop.bindPopup(medalWorkshopPopup);
 medalWorkshop.bindTooltip('Medal Workshop <br> film: Medal Workshop'); // hover text
-
 
 // const fsion = L.marker([-34.578199, -58.509716], { icon: yellowIcon }, mymap.getMaxZoom()).addTo(mymap);
 //       fsion.bindPopup('<h2>Fsion</h2> <p> Here has to be added some text for later </p> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
