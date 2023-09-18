@@ -170,7 +170,7 @@ h5{
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  gap: 1vw;
+  gap: 0.5vw;
 }
 
 /* CSS for each column within the popup content */
@@ -181,7 +181,7 @@ h5{
 }
 
 .popup-column img {
-  height: 20vh;
+  height: 13vh;
   width: auto; 
 }
 
@@ -189,10 +189,6 @@ h5{
   height: 20vh;
   width: auto; 
 }
-
-
-
-
 
 .image-container {
   text-align: center; 
