@@ -89,7 +89,7 @@ campoMunicipal.bindTooltip('Campo Municipal <br> film: Iob Chagui'); // hover te
 // const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon}).addTo(mymap);
 //       parroquia.bindPopup('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 />');
 const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon }).addTo(mymap);
-const parroquiaPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/321468806?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Inside/Outside"></iframe>');
+const parroquiaPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> The club is run by a parish under the premise of prevention and saveguarding children and youth as well as supporting the families living in the surrounding neighbourhood. Thanks to Padre Juan who allowed me to access their grounds and do the filming.  </p> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/321468806?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Inside/Outside"></iframe>');
 parroquia.bindPopup(parroquiaPopup);
 parroquia.bindTooltip('Villa 11 14 <br> Film: Praying for Taekwondo'); // hover text
 
@@ -119,13 +119,13 @@ cenard.bindTooltip('CENARD'); // hover text
 // const juventudCastelar = L.marker([-34.664928, -58.656449], {icon: blueIcon}).addTo(mymap);
 //       juventudCastelar.bindPopup('<h2> Sunday Competition </h2> <p> Here has to be added some text for later </p> <img src = "assets/juventudCastelar.png" width=400 height=280 />');
 const juventudCastelar = L.marker([-34.664928, -58.656449], {icon: blueIcon }).addTo(mymap);
-const juventudCastelarPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Sunday Competition </h2> <p> ... </p> <img src = "assets/juventudCastelar.png" width=400 height=280 />');
+const juventudCastelarPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Sunday Competition </h2> <p> We came here one Sunday morning and spend the day at the competition. The fight of the competitor who appears in -Sunday Games- at the G1 competition was ended by the coach due to disagreements over the judging. </p> <img src = "assets/juventudCastelar.png" width=400 height=280 />');
 juventudCastelar.bindPopup(juventudCastelarPopup);
 juventudCastelar.bindTooltip('Castelar'); // hover text
 
 // const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Pedro Echague</h2><a href="https://youtu.be/inrmC-Ci4gI"><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /></a>');
 const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon }).addTo(mymap);
-const pedroEchaguePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Pedro Echague</h2><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /><iframe src="https://player.vimeo.com/video/863964562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.3 Play, Games, Sport"></iframe>');
+const pedroEchaguePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Pedro Echague</h2><h3> This was a competition organised by the Metropolitan Federation. <br> Payig attention to the background you see the competitor who is at the G1 - and protagonist of Lara Gourmet. </h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /><iframe src="https://player.vimeo.com/video/863964562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.3 Play, Games, Sport"></iframe>');
 pedroEchague.bindPopup(pedroEchaguePopup);
 pedroEchague.bindTooltip('Pedro Echagüe <br> film: Play, Games, Sport'); // hover text
 
@@ -152,7 +152,7 @@ fsion.bindTooltip('F-sion'); // hover text
 // const notary = L.marker([-34.606004, -58.386153], { icon: yellowIcon }).addTo(mymap);
 //       notary.bindPopup('<h2>Notary</h2> <p> Here has to be added some text for later </p> <img src = "assets/Notary_image.png" width=400 height=280 />');
 const notary = L.marker([-34.606004, -58.386153], {icon: yellowIcon }).addTo(mymap);
-const notaryPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Notary</h2> <p> Here has to be added some text for later </p> <img src = "assets/Notary_image.png" width=400 height=280 />');
+const notaryPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Notary</h2> <p> This is the notary that ratified the paperwork creating the -Asociación Choi- </p> <img src = "assets/Notary_image.png" width=400 height=280 />');
 notary.bindPopup(notaryPopup)
 notary.bindTooltip('Notary'); // hover text
 
