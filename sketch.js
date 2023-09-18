@@ -35,12 +35,11 @@ var popup = L.popup({
 .setContent(' <h1>INTRODUCTION!!!!</h1>  <h4> Welcome to this map exploring Taekwondo in Buenos Aires. The markers are the locations where I did my fieldwork. Click on them and you will see a new pop-up. Some of them  are linked to short films and others just have a description and image. On the top right you can choose different settings. For example, you can just choose a colour or you can look at suggested routes...<br><br>Feel free to roam a about and enjoy the journey into my PhD. <br>Best wishes, <br> Kika <br>  </h4>  <h5>*This map has been made by Vendela Håkonsen and Henrike Neuhaus <br> **find the hidden one, it is a long story</h5> <br><br><br><br>')
 .openOn(mymap);
 
-
 //--------------------Red icons-----------------------------------
 const asociacionChoi = L.marker([-34.595508, -58.426375], {icon: redIcon}).addTo(mymap);
 const asociacionChoiPopup = L.popup({closeButton: false, autoClose: false, className: 'AC-custom-popup'}).setContent('<h2> Asociacion Choi</h2>  <h5> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long-term practitioners with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </h5> <h3> Sabon = Master </h3> </a><img src="assets/sabon_master.png" width=400 height=253 /><iframe src="https://player.vimeo.com/video/346124939?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.1 Sabon = Master"></iframe>');
 asociacionChoi.bindPopup(asociacionChoiPopup);
-asociacionChoi.bindTooltip('Asociacion Choi <br> film: Sa Bum = Master'); // hover text
+asociacionChoi.bindTooltip('Asociacion Choi <br> Film: Sa Bum = Master'); // hover text
 
 const peruBeach = L.marker([-34.472324, -58.492197], { icon: redIcon }).addTo(mymap);
       peruBeach.bindPopup('<h2>San Isidro</h2> <p> Here comenced the journey into Taekwondo </p> <img src = "assets/peruBeach02.png" width=400 height=250 /> <img src = "assets/peruBeach01.png" width=400 height=250 />');
@@ -231,7 +230,7 @@ function animateRoute(routePolyline, start, end) {
 //-----------Layers----------------------------
 var workSparingLayers = L.layerGroup([work1, work2, work3, work4, work5, work6, work7]);
 
-var trainingLayers = L.layerGroup([training1, training2, training3, training4, training5 ]);
+var trainingLayers = L.layerGroup([training1, training2, training3, training4, training5]);
 
 var competitionPoomsaeLayers = L.layerGroup([comp1, comp2, comp3, comp4]);
 
@@ -280,7 +279,6 @@ mymap.on('overlayremove', function (event) {
     removedLayer.getLayers().forEach(polyline => polyline.setLatLngs([])); // Clear the polyline
   }
 });
-
 
 const introType ={
   'Intro': intro
