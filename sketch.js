@@ -33,7 +33,7 @@ var popup = L.popup({
 
 //--------------------Red icons-----------------------------------
 const asociacionChoi = L.marker([-34.595508, -58.426375], {icon: redIcon}).addTo(mymap);
-const asociacionChoiPopup = L.popup({closeButton: false, autoClose: false, className: 'AC-custom-popup'}).setContent('<h2> Asociacion Choi</h2>  <h5> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long-term practitioners with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </h5> <h3> Sabon = Master </h3> </a><img src="assets/sabon_master.png" width=400 height=253 /><iframe src="https://player.vimeo.com/video/346124939?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.1 Sabon = Master"></iframe>');
+const asociacionChoiPopup = L.popup({closeButton: false, autoClose: false, className: 'AC-custom-popup'}).setContent('<h2> Asociacion Choi</h2>  <p> Here is the central hub of the "Asociación de Alumnos de Nam Sung Choi" an association founded by the long-term practitioners with Sabon Nim Choi, Nam Sung who was one of the three pioneers of Taekwondo in Argentina. </p> <h3> Sabon = Master </h3> </a><img src="assets/sabon_master.png" width=400 height=253 /><iframe src="https://player.vimeo.com/video/346124939?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.1 Sabon = Master"></iframe>');
 asociacionChoi.bindPopup(asociacionChoiPopup);
 asociacionChoi.bindTooltip('Asociacion Choi <br> Film: Sa Bum = Master'); // hover text
 
@@ -48,26 +48,26 @@ peruBeach.bindTooltip('San Isidro'); // hover text
 const blackHeart = L.marker([-34.699252, -58.608133], {icon: redIcon }).addTo(mymap);
 const blackHeartPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Black Heart</h2> <h3> Film: Family Affairs</h3><p> I met the instructor through the saturday black belt trainings in -Asociacion Choi- and I was invited to observe the class. <br> After the 3 hour long interview the son and I sat down together watched the material and selected statements that we considered important to show in the film.</p> <img src = "assets/Black_heart.png" width = 400 height=253/><iframe src="https://player.vimeo.com/video/297399379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 2.1 Family Affairs"></iframe>');
 blackHeart.bindPopup(blackHeartPopup);
-blackHeart.bindTooltip('La Matanza <br> film: Family Affairs'); // hover text
+blackHeart.bindTooltip('La Matanza <br> Film: Family Affairs'); // hover text
 
 // const platense = L.marker([-34.541026, -58.482004], { icon: redIcon }).addTo(mymap);
 //       platense.bindPopup('<h2>Training in Platense</h2> <p> Here has to be added some text for later </p> <img src = "assets/Platense_image.png" width=400 height=250 />');//.openPopup();
 const platense = L.marker([-34.541026, -58.482004], {icon: redIcon }).addTo(mymap);
-const platensePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Training in Platense</h2> <p> We were training here regularly after the group moved from -lincoln- here. <br> At this athletic club, they offer a broad range of sporting activities and my interlocutor organised an interclub tournament for children for which they made the medals. <br> Linked locations and films: <br> Medal Workshop <br> Lincoln <br> CENARD <br> G1 Competition <br> Triglav </p> <img src = "assets/Platense_image.png" width=400 height=250 />');
+const platensePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Training in Platense</h2> <p> We were training here regularly after the group moved from -lincoln- here. <br><br> At this athletic club, they offer a broad range of sporting activities and my interlocutor organised an interclub tournament for children for which they made the medals. </p><h3> Linked locations and films: </h3><ul><li> Medal Workshop </li><li> Lincoln </li> <li> CENARD </li><li> G1 Competition </li><li> Triglav </li></ul> <img src = "assets/Platense_image.png" width=400 height=250 />');
 platense.bindPopup(platensePopup);
 platense.bindTooltip('Platense'); // hover text
 
 // const lincoln = L.marker([-34.575294, -58.530092], { icon: redIcon }).addTo(mymap);
 //       lincoln.bindPopup('<h2>Training in San Martín</h2> <p> Here has to be added some text for later </p> <img src = "assets/Lincoln_image.png" width=400 height=280 />');
 const lincoln = L.marker([-34.575294, -58.530092], {icon: redIcon }).addTo(mymap);
-const lincolnPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Training in San Martín</h2> <p> This building was part of a school and I commenced training with this group that soon moved to PLATENSE.  <br> Linked locations and films: <br> Medal Workshop <br> Platense <br> CENARD <br> G1 Competition <br> Triglav <br> F-Sion </p> <img src = "assets/Lincoln_image.png" width=400 height=280 />');
+const lincolnPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Training in San Martín</h2> <p> This building was part of a school and I commenced training with this group that soon moved to PLATENSE.</p><h3> Linked locations and films: </h3> <p><ul> <li> Medal Workshop </li><li> Platense </li><li> CENARD </li><li> G1 Competition </li> <li>Triglav </li><li> F-Sion </li></ul></p> <img src = "assets/Lincoln_image.png" width=400 height=280 />');
 lincoln.bindPopup(lincolnPopup);
 lincoln.bindTooltip('Lincoln'); // hover text
 
 // const gymGuido = L.marker([-34.58936, -58.39052], { icon: redIcon}).addTo(mymap);
 //       gymGuido.bindPopup('<h2> Recoleta </h2> <p> Here has to be added some text for later </p> <img src = "assets/Gym_Guido01.png" width=400 height=280 /> </p> <img src = "assets/Gym_Guido02.png" width=400 height=280 />');
 const gymGuido = L.marker([-34.58936, -58.39052], {icon: redIcon }).addTo(mymap);
-const gymGuidoPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Recoleta </h2> <p> Here has to be added some text for later </p> <img src = "assets/Gym_Guido01.png" width=400 height=280 /> </p> <img src = "assets/Gym_Guido02.png" width=400 height=280 />');
+const gymGuidoPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Recoleta </h2>  <img src = "assets/Gym_Guido01.png" width=400 height=280 /> </p> <img src = "assets/Gym_Guido02.png" width=400 height=280 />');
 gymGuido.bindPopup(gymGuidoPopup);
 gymGuido.bindTooltip('Recoleta'); // hover text
 
@@ -76,15 +76,15 @@ gymGuido.bindTooltip('Recoleta'); // hover text
 const triglav = L.marker([-34.621898, -58.529336], {icon: redIcon }).addTo(mymap);
 const triglavPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Triglav</h2><h3> Chapter 4 Joint Training </h3> <img src = "assets/ch_4_joint_training.png" width=400 height=281 /> <iframe src="https://player.vimeo.com/video/283082158?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 4.1 Joint Training"></iframe>');
 triglav.bindPopup(triglavPopup);
-triglav.bindTooltip('Triglav <br> film: Joint Training'); // hover text
+triglav.bindTooltip('Triglav <br> Film: Joint Training'); // hover text
 
 
 // const campoMunicipal = L.marker([-34.498664, -58.522979], {icon: redIcon}).addTo(mymap);
 //       campoMunicipal.bindPopup('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <a href = "https://youtu.be/GC3F5JBdskY"> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 />');
 const campoMunicipal = L.marker([-34.498664, -58.522979], {icon: redIcon }).addTo(mymap);
-const campoMunicipalPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Lara Training </h2> <p> Here has to be added some text for later </p> <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/863963193?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.2 Iob Chagui"></iframe>');
+const campoMunicipalPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2> Lara Training </h2>  <h3> Lara Instruction </h3>  <img src = "assets/campo_Municipal_image.png" width=400 height=250 /> <iframe src="https://player.vimeo.com/video/863963193?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.2 Iob Chagui"></iframe>');
 campoMunicipal.bindPopup(campoMunicipalPopup);
-campoMunicipal.bindTooltip('Campo Municipal <br> film: Iob Chagui'); // hover text
+campoMunicipal.bindTooltip('Campo Municipal <br> Film: Iob Chagui'); // hover text
 
 // const parroquia = L.marker([-34.650071, -58.433637], {icon: redIcon}).addTo(mymap);
 //       parroquia.bindPopup('<h2> Madre del Pueblo, Villa 11 14 Bajo Flores </h2> <p> Here has to be added some text for later </p> <a href = "https://vimeo.com/321468806?share=copy"> <h3> Inside,Outside </h3>  <img src = "assets/Parroquia01.png" width=400 height=250 />');
@@ -99,12 +99,12 @@ parroquia.bindTooltip('Villa 11 14 <br> Film: Praying for Taekwondo'); // hover 
 const costaSalguero = L.marker([-34.570145, -58.397478], {icon: blueIcon }).addTo(mymap);
 const costaSalgueroPopup = L.popup({closeButton: false, autoClose: false, className: 'CS-custom-popup'}).setContent('<h2>Costa Salguero</h2>    <div class="popup-content"> <div class="popup-column"> <div class="image-container"><h3>Lara Gourmet</h3><img src="assets/Lara_Gourmet.png" width="400" height="260" alt="Lara Gourmet" /></div> </div> <div class="popup-column"> <h3>Sunday Games</h3>  <div class="image-container"><img src="assets/ch_4_SundayGames.png" width="400" height="205" alt="Sunday Games" /></div> </div></div><div class="popup-content"><div class="popup-column"><iframe src="https://player.vimeo.com/video/329361514?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 4.2 Sunday Games"></iframe></div><div class="popup-column"> <iframe src="https://player.vimeo.com/video/320754008?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 3.1 Lara Gourmet"></iframe></div></div>');
 costaSalguero.bindPopup(costaSalgueroPopup);
-costaSalguero.bindTooltip('G1 Competition <br> film: Lara Gourmet <br> film: Sunday Games'); // hover text
+costaSalguero.bindTooltip('G1 Competition <br> Film: Lara Gourmet <br> Film: Sunday Games'); // hover text
 
 // const exKDT = L.marker([-34.570145, -58.397478], { icon: blueIcon }).addTo(mymap);
 //       exKDT.bindPopup("<b>Ex KDT</b><br> I observed one competition here on a warm sunday and as I cycled there and was not in the mood to schlepp my camera equipment, I opted for notes only. It was nice for once to be there able to observe and hold the paddle while my the competitor warmed up and instead of finding nice angles to film a fight, we were talking about making some pocket money as a referee... ");
 const exKDT = L.marker([-34.569107, -58.403364], {icon: blueIcon }).addTo(mymap);
-const exKDTPopup = L.popup({closeButton: false, autoClose: false, className: 'EX-custom-popup'}).setContent('<h2>Ex KDT<h2> <h5> I observed one competition here on a warm sunday and as I cycled there and was not in the mood to schlepp my camera equipment, I opted for notes only. It was nice for once to be there able to observe and hold the paddle while my the competitor warmed up and instead of finding nice angles to film a fight, we were talking about making some pocket money as a referee...</h5> ');
+const exKDTPopup = L.popup({closeButton: false, autoClose: false, className: 'EX-custom-popup'}).setContent('<h2>Ex KDT<h2> <p> I observed one competition here on a warm sunday and as I cycled there and was not in the mood to schlepp my camera equipment, I opted for notes only. It was nice for once to be there able to observe and hold the paddle while my the competitor warmed up and instead of finding nice angles to film a fight, we were talking about making some pocket money as a referee...</p> ');
 exKDT.bindPopup(exKDTPopup);
 exKDT.bindTooltip('exKDT'); // hover text
 
@@ -125,9 +125,9 @@ juventudCastelar.bindTooltip('Castelar'); // hover text
 
 // const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Pedro Echague</h2><a href="https://youtu.be/inrmC-Ci4gI"><h3> Chapter 3 Marcos, Hilda</h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /></a>');
 const pedroEchague = L.marker([-34.641747, -58.468589], {icon: blueIcon }).addTo(mymap);
-const pedroEchaguePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Pedro Echague</h2><h3> This was a competition organised by the Metropolitan Federation. <br> Payig attention to the background you see the competitor who is at the G1 - and protagonist of Lara Gourmet. </h3> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /><iframe src="https://player.vimeo.com/video/863964562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.3 Play, Games, Sport"></iframe>');
+const pedroEchaguePopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Pedro Echague</h2><p> This was a competition organised by the Metropolitan Federation. Payig attention to the background you see the competitor who is at the G1 - and protagonist of Lara Gourmet. </p> <img src = "assets/Marcos_Hilda.png" width=400 height=225 /><iframe src="https://player.vimeo.com/video/863964562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Chapter 0.3 Play, Games, Sport"></iframe>');
 pedroEchague.bindPopup(pedroEchaguePopup);
-pedroEchague.bindTooltip('Pedro Echagüe <br> film: Play, Games, Sport'); // hover text
+pedroEchague.bindTooltip('Pedro Echagüe <br> Film: Play, Games, Sport'); // hover text
 
 //--------------------Yellow icons-----------------------------------
 // const seoul = L.marker([35.907757, 127.766922], { icon: yellowIcon }).addTo( mymap );
@@ -145,7 +145,7 @@ medalWorkshop.bindTooltip('Medal Workshop <br> film: Medal Workshop'); // hover 
 // const fsion = L.marker([-34.578199, -58.509716], { icon: yellowIcon }, mymap.getMaxZoom()).addTo(mymap);
 //       fsion.bindPopup('<h2>Fsion</h2> <p> Here has to be added some text for later </p> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
 const fsion = L.marker([-34.578199, -58.509716], {icon: yellowIcon }).addTo(mymap);
-const fsionPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Fsion</h2> <h5> F-Sion is a subsidiary company that distributes WT-recognised euqipment. <br> films connected and related are: <br> Medal Workshop <br> Locations:<br> Lincoln, Platense  </h5> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
+const fsionPopup = L.popup({closeButton: false, autoClose: false, className: 'BH-custom-popup'}).setContent('<h2>Fsion</h2> <p> F-Sion is a subsidiary company that distributes WT-recognised euqipment.<p> <h3> Films connected and related are: </h3> <p> <ul> <li>Medal Workshop </li> <li>Locations:</li> <li>Lincoln </li><li> Platense </li> </ul></p> <img src = "assets/f-Sion_product_display.png" width=400 height=280 />');
 fsion.bindPopup(fsionPopup);
 fsion.bindTooltip('F-sion'); // hover text
 
